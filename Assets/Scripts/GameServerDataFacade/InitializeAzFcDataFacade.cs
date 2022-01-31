@@ -12,7 +12,7 @@ namespace GameServerDataFacade
         public string userAuthPass = "KDcx6kB2v77B5bm5AwY7XakYSsSB7Q4R";
         public string authCode = "s1GIzLcjWf3uSHN7WS8HIbhh4LFWdVIsi25scAASvpBuy9u7JkRcWw==";
     
-        public string url = "https://pp2gameazurefcs20220127010428.azurewebsites.net";
+        public string url = "https://pp2gameazurefcs.azurewebsites.net";
 
         public string getServerListUri = "/api/ProcessNewConnectionFcAz";
     

@@ -26,7 +26,7 @@ public class ServerPanelController : MonoBehaviour
 
         UpdateStatusLabelColor(serverData.status);
         
-        UpdateButtonEvent( $"{serverData.dns}.{serverData.region}.azurecontainer.io", serverData.port, serverData.status);
+        UpdateButtonEvent( $"{serverData.dns}.{serverData.region}.azurecontainer.io", serverData.port, serverData.status, serverData.maxPlayers, serverData.playersCount);
     }
 
     void UpdateStatusLabelColor(string pStatus)
@@ -41,9 +41,9 @@ public class ServerPanelController : MonoBehaviour
         serverStatusLabel.color = c;
     }
 
-    private void UpdateButtonEvent(string pDns, int pPort, string pStatus)
+    private void UpdateButtonEvent(string pDns, int pPort, string pStatus, int pMaxPlayers, int pPlayersCount)
     {
-        connectButton.interactable = pStatus.ToLower() == "running";
+        connectButton.interactable = pStatus.ToLower() == "running" && pPlayersCount < pMaxPlayers;
         
         connectButton.onClick.AddListener(delegate
         {

@@ -484,10 +484,10 @@ RectTransform:
   m_Father: {fileID: 845701352}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -164, y: 15}
-  m_SizeDelta: {x: -385.1845, y: -95.5133}
+  m_SizeDelta: {x: 614.8155, y: 466.4867}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &275706268
 MonoBehaviour:
@@ -594,8 +594,8 @@ MonoBehaviour:
   isLocalhost: 0
   userAuth: pp2game
   userAuthPass: KDcx6kB2v77B5bm5AwY7XakYSsSB7Q4R
-  authCode: s1GIzLcjWf3uSHN7WS8HIbhh4LFWdVIsi25scAASvpBuy9u7JkRcWw==
-  url: https://pp2gameazurefcs20220127010428.azurewebsites.net
+  authCode: nO3yJr14m3cpsrimxAd0tQk57/Gu2BDuZMn8GEXXarB4lEEaB0aMQA==
+  url: https://pp2gameazurefcs.azurewebsites.net
   getServerListUri: /api/ProcessNewConnectionFcAz
   localHostUrl: http://localhost:7071
 --- !u!1 &519420028
@@ -1801,10 +1801,10 @@ RectTransform:
   m_Father: {fileID: 275706267}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -4.0394897, y: -14.092102}
-  m_SizeDelta: {x: -45.408, y: -86.1185}
+  m_SizeDelta: {x: 568.59204, y: 379.8815}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1718778929
 MonoBehaviour:
@@ -1946,9 +1946,9 @@ RectTransform:
   m_Father: {fileID: 1699085112}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.000015259, y: -343}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000015259, y: -182}
   m_SizeDelta: {x: 72.1232, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1847572105
