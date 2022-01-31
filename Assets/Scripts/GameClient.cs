@@ -13,9 +13,15 @@ public class GameClient : MonoBehaviour
     private PlayerInfo _thisPlayer;
     public TcpMessageChannel Channel { get; private set; }
 
+    public void Initialize(string pTargetIp, int pPort)
+    {
+        targetIp = pTargetIp;
+        targetPort = pPort;
+        
+        StartCoroutine(InitializeRoutine());
+    }
 
-    // Start is called before the first frame update
-    IEnumerator Start()
+    IEnumerator InitializeRoutine()
     {
         targetIp = GetIpFromCmdArg(targetIp);
         
