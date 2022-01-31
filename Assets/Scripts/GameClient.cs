@@ -20,6 +20,12 @@ public class GameClient : MonoBehaviour
         
         StartCoroutine(InitializeRoutine());
     }
+    
+    [ContextMenu("Initialize Local")]
+    public void InitializeLocal()
+    {
+        Initialize(targetIp, targetPort);
+    }
 
     IEnumerator InitializeRoutine()
     {
@@ -40,8 +46,8 @@ public class GameClient : MonoBehaviour
 
         while (true)
         {
-            Channel.SendMessage(new WhoAmIRequest());
             yield return new WaitForSeconds(5);
+            Channel.SendMessage(new WhoAmIRequest());
         }
     }
 
@@ -105,6 +111,7 @@ public class GameClient : MonoBehaviour
                 break;
 
                 case ValidClientRequest validClientRequest:
+                    Debug.LogWarning($"Valid Client Request received");
                     StartCoroutine(SendValidCodeResponse(validClientRequest.serverCode));
                     break;
             default:
