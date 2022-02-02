@@ -111,13 +111,13 @@ public class ServerListUiController : MonoBehaviour
         {
             if (!_serversMap.ContainsKey(srvKv.Key))
             {
-                Destroy(srvKv.Value);
                 keysToRemove.Add(srvKv.Key);
             }
         }
 
         foreach (var k in keysToRemove)
         {
+            Destroy(_serversPanelsMap[k].gameObject);
             _serversPanelsMap.Remove(k);
         }
     }

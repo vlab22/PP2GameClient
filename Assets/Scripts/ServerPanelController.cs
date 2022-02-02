@@ -20,7 +20,7 @@ public class ServerPanelController : MonoBehaviour
 
     public void UpdateUiControls(ServerDetailsData serverData)
     {
-        serverNameLabel.text = serverData.name;
+        serverNameLabel.text = $"{serverData.dns}:{serverData.port}";
         playersCountLabel.text = $"{serverData.playersCount}/{serverData.maxPlayers}";
         serverStatusLabel.text = $"{serverData.status}";
 

@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class CrossScenesVars : MonoSingleton<CrossScenesVars>
 {
-    public string serverAddress;
-    public int serverPort;
+    public string serverAddress = "";
+    public int serverPort = -1;
     
     private void Awake()
     {
