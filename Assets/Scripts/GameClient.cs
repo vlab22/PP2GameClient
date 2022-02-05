@@ -44,6 +44,10 @@ public class GameClient : MonoBehaviour
 
         yield return new WaitForSeconds(2);
 
+        yield return SendValidCodeResponse(targetPort.ToString());
+        
+        yield return new WaitForSeconds(2);
+
         while (true)
         {
             yield return new WaitForSeconds(5);
@@ -109,11 +113,7 @@ public class GameClient : MonoBehaviour
                 };
                 Debug.LogWarning($"PlayerInfo From Server: {_thisPlayer.userName}");
                 break;
-
-                case ValidClientRequest validClientRequest:
-                    Debug.LogWarning($"Valid Client Request received");
-                    StartCoroutine(SendValidCodeResponse(validClientRequest.serverCode));
-                    break;
+            
             default:
                 break;
         }
